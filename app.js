@@ -2,11 +2,18 @@
 const container = document.querySelector('.container')
 
 function createDiv() {
-    for (let i = 0; i < 256; i++) {
-        const div = document.createElement('div');
-        div.setAttribute('id', 'box');
-        container.appendChild(div);
-    }
+    const div = document.createElement('div');
+    div.setAttribute('class', 'box');
+    container.appendChild(div);
 }
 
-createDiv()
+function fillBlack() {
+    this.setAttribute('style', 'background-color: black');
+}
+
+for (let i = 0; i < 256; i++) {
+    createDiv()
+}
+
+const divs = Array.from(document.querySelectorAll('.box'))
+divs.forEach(div => div.addEventListener('mouseover', fillBlack));

@@ -12,4 +12,5 @@
     display: grid;
     grid-template-columns: repeat(16, 20px);
     grid-template-rows: repeat(16, 20px);
+    border: 1px solid black;
 }
