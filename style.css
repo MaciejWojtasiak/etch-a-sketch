@@ -12,9 +12,9 @@ body {
 .container {
     width: 600px;
     height: 600px;
-    outline: 1px solid black;
-    padding: 20px;
-    background-color: #666333;
+    padding: 50px;
+    background-color: #c71d17;
+    border-radius: 30px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -24,10 +24,9 @@ body {
     grid-template-rows: repeat(16, 1fr);
 }
 
-.btn-info {
+.buttons {
     position: absolute;
     bottom: 5%;
     left: 50%;
     transform: translate(-50%, -5%);
-    cursor: pointer;
 }
