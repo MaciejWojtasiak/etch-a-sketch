@@ -9,6 +9,11 @@ body {
     height: 100vh;
 }
 
+body h1 {
+    margin: 0 auto;
+    text-align: center;
+}
+
 .container {
     width: 600px;
     height: 600px;

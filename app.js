@@ -29,11 +29,11 @@ function clearBoard() {
 
 function makeCustomGrid() {
     clearBoard()
-    let size = prompt('How many boxes per side you want?')
+    let size = prompt('New grid resolution (squares per side, max. limit : 64)')
     if (size <= 1) {
         alert(`It's too small`);
-    } else if (size > 100) {
-        alert(`It's too big, 100 is maximum`)
+    } else if (size > 64) {
+        alert(`It's too big, 64 is maximum`)
     } else {
         container.setAttribute('style', `grid-template-columns: repeat(${size}, 1fr); grid-template-rows: repeat(${size}, 1fr);`)
         makeBoard(size)
